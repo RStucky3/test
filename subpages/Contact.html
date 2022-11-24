@@ -1,0 +1,193 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel ="icon" href ="../fotos/profielfoto.jpeg" type ="image/x-icon"> <!-- Icon van de webpagina-->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="../CSS/StyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">	
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="bovenbalk"> <!--Header-->
+      <div class="Header"> <!--Bovenbalk met grid, gesoorteerde vlakken van a t/m f-->
+        <div class="boxa"> 
+          <div id="topNav" class="navigation"> <!--Navigation knop-->
+              <span id="closebtn" onclick="navToggle()">
+                  <span class="line1"></span>
+                  <span class="line2"></span>
+                  <span class="line3"></span>
+              </span>
+            <div class="logo"> 
+              <img src=""/>
+            </div>
+            <ul class="menulist">
+              <li><a class="menuitems" href="../index.php">Home</a></li>
+              <li><a class="menuitems" href="Contact.html">Contact</a></li>				
+              <li><a class="menuitems" href="Ervaring.html">Ervaring</a></li>
+            </ul>			
+          </div>        
+          <div id="main">
+          </div>
+        </div>
+        <div class="boxb"></div>
+        <div class="boxc"><h1></h1></div>
+        <div class="boxd"><h1></h1></div>
+        <div class="boxe"><h1></h1></div>
+        <div class="boxf"><br><a href="Contact.html"><button class="button"><span>Contact </span></button></a></div> <!--Knop naar contact pagina-->
+        <br>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container"> 
+      <center>
+        <hr>
+        <input id="checkbox" type="checkbox">
+        <div class="logo"> <!--Logo-->
+          <hr>
+          <a href="index.html">
+              <img src="../fotos/profielfoto.jpeg" class="profielfoto"
+                   alt="profielfoto"
+                   height="150"
+                   width="150">
+          </a>
+        </div>
+      <hr>
+      <br>
+
+      <div class="Contact"> <!--Contact informatie-->
+        <h1>Neem contact op</h1>
+        <br>
+        <hr \>
+        <div class="row">
+          <div class="col-sm">
+            <h2>Bel mij</h2>
+            <a href="tel:+316222987076" style="color:white;"><i class="fas fa-phone-alt"></i> 0622987076</a>
+          </div>
+          <div class="col-sm">
+            <h2>Stuur mij een bericht</h2>
+            <p><i class="far fa-comment-dots"></i> Vul het formulier hier beneden in</p>
+          </div>
+          <div class="col-sm" id="mailto" >
+            <h2>Mail mij</h2>
+            <a href="mailto:ruben.stucky@gmail.com" style="color:white;">
+            <p><i class="fas fa-envelope-open-text"></i> ruben.stucky@gmail.com</p>
+            </a>
+          </div>
+        </div>
+        <hr>
+        <br>
+
+      </div>
+     <div class="alert-success">
+        <span>Bericht verzonden! Dankuwel.</span>
+        </div><!-- 
+        <div class="alert-error">
+          <span>Er is iets fout gegaan, probeer het opnieuw.</span>
+          </div>-->
+      <div class="Contact-form"> <!--Werkende contact form-->
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {document.getElementById("myForm").reset()}"></iframe>      
+        
+        <form id="myForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc3Y64Uw9r_oJQR7RMQRCLhfaKXh8iNSvhf8B1SIhlrUxaXDw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+          <div class="messages"></div>
+      
+          <div class="controls">
+      
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_name">Voornaam *</label>
+                          <input type="text" name="entry.1500014012" id="name" class="form-control" placeholder="Voer alstublieft uw voornaam in *" required="required" data-error="Firstname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_lastname">Achternaam *</label>
+                          <input type="text" name="entry.1196897477" id="surname" class="form-control" placeholder="Voer alstublieft uw achternaam in *" required="required" data-error="Lastname is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_email">Email *</label>
+                          <input type="email" name="entry.710508256" id="email" class="form-control" placeholder="Voer alstublieft uw email in *" required="required" data-error="Valid email is required.">
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="form_need">Waar wilt u contact voor opnemen? *</label>
+                          <select name="entry.703687299" class="form-control" id="need" required="required" data-error="Voer alstublieft in waarvoor u contact opneemt.">
+                              <option value=""></option>
+                              <option value="Vraag">Een vraag</option>
+                              <option value="Verzoek">Een verzoek</option>
+                              <option value="Offerte">Een samenwerking</option>
+                              <option value="Other">Overige verzoeken</option>
+                          </select>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="form-group">
+                          <label for="form_message">Bericht *</label>
+                          <textarea name="entry.1094049491" class="form-control" id="message" placeholder="Bericht aan ons *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                          <div class="help-block with-errors"></div>
+                      </div>
+                  </div>
+                  <div class="col-md-12">
+                      <input type="submit" name="submit" class="btn btn-success btn-send" value="Send" onclick="setTimeout(validateForm, 3000)" >
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <p class="text-mute">
+                          <strong>*</strong>Deze vakken zijn verplicht.</p>
+                  </div>
+              </div>
+          </div>
+      
+      </form> 
+      </div>
+   
+    </center>
+    </div>  
+    <footer> <!--Footer-->
+      <div class="row">
+        <div class="col-3 col-sm-4" style="text-align: center;">
+          <p>Ruben&nbspStucky</p>
+        </div>
+        <div class="col-5 col-sm-4" style="text-align: center;" >
+          <p>ROC&nbspMondriaan</p>
+        </div>
+        <div class="col-4 col-sm-4" style="text-align: center;">
+          <p>T1Nb</p>
+        </div>
+      </div>
+  </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="../JS/myscripts.js"></script>
+  </body>
+</html>
